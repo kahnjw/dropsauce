@@ -1,0 +1,112 @@
+.header-contents {
+  margin: 0 2em;
+
+  h1 {
+    display: inline-block;
+    font-size: 1.2em;
+  }
+
+  .sub-h1 {
+    display: none;
+  }
+
+  nav {
+    float: right;
+    display: inline-block;
+
+    li {
+      display: inline-block;
+    }
+
+    ul a {
+      padding: 1em 0.6em;
+      display: block;
+    }
+  }
+}
+
+header {
+  background: #f3f3f3;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  z-index: 10;
+}
+
+.header-spacing {
+  height: 55px;
+}
+
+@keyframes fadeindown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  transform: none;
+  }
+}
+
+@-webkit-keyframes fadeindown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+  }
+}
+
+@-moz-keyframes fadeindown {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: none;
+  }
+}
+
+@-o-keyframes fadeindown {
+  0% {
+    opacity: 0;
+    -o-transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: none;
+  }
+}
+
+.fadeindown {
+  animation-name: fadeindown;
+  -webkit-animation-name: fadeindown;
+  -moz-animation-name: fadeindown;
+  -o-animation-name: fadeindown;
+}
+
+
+.animated {
+  -webkit-animation-duration: 0.2s;
+     -moz-animation-duration: 0.2s;
+       -o-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+       -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .header-contents {
+    margin: 0;
+
+    nav {
+      display: none;
+    }
+  }
+}
