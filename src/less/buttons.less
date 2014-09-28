@@ -1,0 +1,55 @@
+.controlls {
+  margin: 0 10px;
+}
+
+.controlls:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.subnav {
+
+  a {
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-right-width: 0;
+    background: #fff;
+    margin: 2em 0 0.5em 0;
+    display: block;
+    float: left;
+    font-size: 0.8em;
+    outline: 0;
+
+    i {
+      margin-right: 0.25em;
+    }
+  }
+
+  a:first-child {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+  }
+
+  a:last-child {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-right-width: 1px;
+    margin-right: 2em;
+  }
+
+  a.active, a.active:hover {
+    border-color: @primary;
+    background-color: @primary;
+    border-right-width: 1px;
+    color: #fff;
+  }
+
+  a.active + a {
+    border-left-width: 0;
+  }
+
+  a:hover {
+    background-color: #efefef;
+  }
+}
