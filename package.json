@@ -23,6 +23,8 @@
   "devDependencies": {
     "mocha": "~1.21.4",
     "promisehelpers": "0.0.3",
-    "chai": "~1.9.1"
+    "chai": "~1.9.1",
+    "exec-sync": "~0.1.6",
+    "less": "~1.7.5"
   }
 }
