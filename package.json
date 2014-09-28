@@ -1,6 +1,6 @@
 {
   "name": "dropsauce",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Style guide and library for Stompdrop",
   "main": "src/index.js",
   "scripts": {
