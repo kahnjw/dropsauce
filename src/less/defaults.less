@@ -1,0 +1,63 @@
+@import "colors";
+
+
+html {
+  font-family: 'Open-Sans', Arial, sans-serif;
+  background: #fff;
+}
+
+body {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+header, section, footer {
+  width: 100%;
+}
+
+.header-contents, .section-contents {
+  margin: 0 auto;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @primary;
+}
+
+p > a, .secondary-link {
+  color: @primary;
+}
+
+p > a:hover, .secondary-link:hover {
+  border-bottom: 1px dotted @primary;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
