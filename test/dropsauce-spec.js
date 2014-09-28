@@ -15,7 +15,7 @@ chai.should();
 describe('dropsauce', function() {
   describe('templates', function() {
     it('returns a header template', function() {
-      dropsauce.header.should.be.a.string;
+      dropsauce.header.should.be.a('string');
     });
 
     it('contains valid less', function() {
