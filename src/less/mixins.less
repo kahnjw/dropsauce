@@ -1,0 +1,18 @@
+.vendor(@property, @value) {
+  -webkit-@{property}: @value;
+     -moz-@{property}: @value;
+       -o-@{property}: @value;
+          @{property}: @value;
+}
+
+.box-shadow(@value) {
+  .vendor(box-shadow, @value);
+}
+
+.border-radius(@value) {
+  .vendor(border-radius, @value);
+}
+
+.box-sizing(@value) {
+  .vendor(box-sizing, @value);
+}
